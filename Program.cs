@@ -12,11 +12,20 @@
             head.next.next.next.next.next = new Node(6);
 
 
-            // for question 1 
-            int k = 1;
-            DeleteKthNode qes1 = new DeleteKthNode();
-            qes1.DeleteNodeBasedOnInput(head,k);
-            qes1.PrintList(head);
+            // for question 1 delete Kth index
+            //int k = 1;
+            //DeleteKthNode qes1 = new DeleteKthNode();
+            //qes1.DeleteNodeBasedOnInput(head,k);
+            //qes1.PrintList(head);
+
+
+            ////for question 2 find the Middle of Node 
+            //FindMiddleNode ques2 = new FindMiddleNode();
+            //int middleTortiseAAndHare = ques2.FindMiddleNodeTortiseAndHare(head);
+            //Console.WriteLine(middleTortiseAAndHare);
+            //int middleBruteForce = ques2.FindMiddleNodeBruteForce(head);
+            //Console.WriteLine(middleBruteForce); 
+
         }
     }
 }

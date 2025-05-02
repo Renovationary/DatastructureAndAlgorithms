@@ -1,0 +1,25 @@
+What is a Node :
+node is small box that hold two things; 
+
+
+
+
+
+
+
+
+
+
+Question:1 
+Remove every K-th node of the linked list
+
+	Given a singly linked list, the task is to remove every kth node of the linked list. Assume that k is always less than or equal to the length of the Linked List.
+	
+
+Solution : 
+
+	The idea is to traverse the linked list while maintaining a counter to track node positions. 
+	Every time the counter reaches k, update the next pointer of the previous node to skip the current kth node, effectively removing it from the list. 
+	Continue this process until reaching the end of the list. This method ensures that the kth nodes are removed as required while preserving the rest of the list structure.
+	
+	

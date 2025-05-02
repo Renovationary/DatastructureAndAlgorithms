@@ -10,7 +10,7 @@ namespace LinkedList_DSA_Training
     {
         public Node DeleteNodeBasedOnInput(Node head, int k)
         {
-            //"C:\WesternDigitalDevelopment\LvL_UP\DSA\QuestionsAndPractise\LinkedList\Remove every k-th node of the linked listF(question1_04302025).txt"
+            //  \Problems\LinkedList\Remove every k-th node of the linked listF(question1_04302025).txt"
             if (head == null || k <= 0) return head;
 
             Node curr = head;
