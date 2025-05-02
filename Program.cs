@@ -10,6 +10,8 @@
             head.next.next.next = new Node(4);
             head.next.next.next.next = new Node(5);
             head.next.next.next.next.next = new Node(6);
+            head.next.next.next.next.next.next = new Node(6);
+            head.next.next.next.next.next.next.next = new Node(6);
 
 
             // for question 1 delete Kth index
@@ -26,6 +28,13 @@
             //int middleBruteForce = ques2.FindMiddleNodeBruteForce(head);
             //Console.WriteLine(middleBruteForce); 
 
+            // For Question 3 : Finding the occurences 
+            int key = 6; 
+            CountOccurences ques3 = new CountOccurences();
+            int occurenceRecursive = ques3.CountOccurenecesRecursive(head, key);
+            int occurenceTransverse = ques3.CountOccurenceTraversing(head, key);
+            Console.WriteLine("occurenceRecursive : " + occurenceRecursive); 
+            Console.WriteLine("occurenceTransverse : " + occurenceTransverse); 
         }
     }
 }

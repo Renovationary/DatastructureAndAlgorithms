@@ -1,0 +1,23 @@
+Question 3 : Count Occurrences in a Linked List
+
+Given a singly linked list and a key, the task is to count the number of occurrences of the given key in the linked list.
+
+Example : 
+Input : head: 1->2->1->2->1->3->1 , key = 1
+Output : 4
+
+Input : head: 1->2->1->2->1, key = 3
+Output : 0
+Explanation: key equals to 3 has 0 occurrences.
+
+Solutions:
+
+Solution_1 : [Naive Approach] By Recursion – O(n) time and O(n) space
+The idea is similar to the iterative approach. 
+Here we are using the recursion to check if the node value equals to key or not. 
+Please note that the iterative approach would be better in terms of time and space. 
+The recursive approach can be good fun exercise or a question in an interview / exam.
+
+Solution_2 : [Expected Approach] By Traversing each node – O(n) time and O(1) space
+The idea is to traverse through the each node of linked list and check if the node data is equal to the key or not. If it is equal to key we will increment the count.
+
