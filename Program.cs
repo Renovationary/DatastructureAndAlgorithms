@@ -29,12 +29,34 @@
             //Console.WriteLine(middleBruteForce); 
 
             // For Question 3 : Finding the occurences 
-            int key = 6; 
-            CountOccurences ques3 = new CountOccurences();
-            int occurenceRecursive = ques3.CountOccurenecesRecursive(head, key);
-            int occurenceTransverse = ques3.CountOccurenceTraversing(head, key);
-            Console.WriteLine("occurenceRecursive : " + occurenceRecursive); 
-            Console.WriteLine("occurenceTransverse : " + occurenceTransverse); 
+            //int key = 6; 
+            //CountOccurences ques3 = new CountOccurences();
+            //int occurenceRecursive = ques3.CountOccurenecesRecursive(head, key);
+            //int occurenceTransverse = ques3.CountOccurenceTraversing(head, key);
+            //Console.WriteLine("occurenceRecursive : " + occurenceRecursive); 
+            //Console.WriteLine("occurenceTransverse : " + occurenceTransverse); 
+
+
+             
+            DoublyLinkedList list = new DoublyLinkedList();
+
+            list.InsertAtTheEnd(10);
+            list.InsertAttheBeginnning(5);
+            list.InsertAtTheEnd(20);
+            list.InsertAtSpecificPosition(15, 2);
+
+            Console.WriteLine("Forward:");
+            list.printForward();  // 5 10 15 20
+
+            Console.WriteLine("Reverse:");
+            list.printBackward();  // 20 15 10 5
+
+            list.deleteByVlaue(10);
+            list.deleteAtBeginning();
+            list.deleteAtLast();
+
+            Console.WriteLine("After deletions:");
+            list.printForward();  // 15
         }
     }
 }

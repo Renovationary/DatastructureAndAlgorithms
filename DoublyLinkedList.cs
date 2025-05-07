@@ -69,7 +69,7 @@ namespace LinkedList_DSA_Training
             if (temp == null || temp.next == null)
             {
                 // position out of bound . 
-                InsertAtTheEnd(data)
+                InsertAtTheEnd(data); 
                 return; 
             }
 
@@ -102,6 +102,132 @@ namespace LinkedList_DSA_Training
                 Head.prev = null; 
             }
 
+        }
+
+        public void deleteAtLast() {
+
+            if (Tail == null) return; //list is empty
+            if (Tail.prev == null) { Head = Tail = null; } //only one node
+            else
+            {
+                Tail = Tail.prev; // move tail to previous node
+                Tail.next = null; // new tail has no next node .
+            }
+        }
+
+        public void deleteAtSpecificPosition(int position)
+        {
+            if (Head == null) return;
+
+            if (position == 0)
+            {
+                deleteAtBeginning();
+                return;
+            }
+
+            DoublyNode temp = Head;
+
+            for (int i = 0; i < position && temp != null ; i++)
+                temp = temp.next;
+
+            if (temp == null) return;
+
+            if (temp.next != null)
+                temp.next.prev = temp.prev;  //If temp is not the last node, update the next node's Prev pointer to skip over temp.
+
+            if (temp.prev != null) 
+                temp.prev.next = temp.next; //If temp is not the first node, update the previous node's Next pointer to skip over temp.
+
+            if (temp == Tail)
+                Tail = temp.prev;
+
+
+        }
+        
+        public void deleteByVlaue(int data)
+        {
+
+            DoublyNode temp = Head; 
+
+            while(temp != null && temp.Data != data)
+            {
+                temp = temp.next; 
+
+                if (temp == null ) return;
+
+                if (temp == Head)
+                    deleteAtBeginning();
+
+                else if (temp == Tail)
+                    deleteAtLast(); 
+                else
+                {
+                    temp.prev.next = temp.next;
+                    temp.next.prev = temp.prev; 
+                }
+            }
+        }
+
+        public bool Search(int data)
+        {
+            
+            if (data == null) return false;
+            DoublyNode temp = Head;
+
+            while (temp != null)
+            { 
+                temp = temp.next;
+                if (temp.Data == data) return true; 
+            }
+
+            return false; 
+        }
+
+         public int length ()
+        {
+            DoublyNode temp = Head;
+            int count = 0;
+
+            while (temp != null) {
+                count++; 
+                temp = temp.next;
+            }
+
+            return count; 
+        }
+
+        public void printForward()
+        {
+            DoublyNode temp = Head;
+
+            while (temp != null) {
+
+                Console.WriteLine(temp.Data + " ");
+                temp = temp.next; 
+
+            }
+
+            Console.WriteLine();
+        }
+
+        public void printBackward() {
+
+            DoublyNode temp = Tail;
+
+            while (temp != null) {
+
+                Console.WriteLine(temp.Data + " ");
+                temp = temp.prev;
+
+            }
+
+            Console.WriteLine(); 
+
+        }
+
+        public void Clear()
+        {
+            Head = Tail = null; 
         }
 
     }
