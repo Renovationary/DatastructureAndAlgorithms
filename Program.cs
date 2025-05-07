@@ -37,26 +37,53 @@
             //Console.WriteLine("occurenceTransverse : " + occurenceTransverse); 
 
 
-             
-            DoublyLinkedList list = new DoublyLinkedList();
 
-            list.InsertAtTheEnd(10);
-            list.InsertAttheBeginnning(5);
-            list.InsertAtTheEnd(20);
-            list.InsertAtSpecificPosition(15, 2);
+            //DoublyLinkedList list = new DoublyLinkedList();
 
-            Console.WriteLine("Forward:");
-            list.printForward();  // 5 10 15 20
+            //list.InsertAtTheEnd(10);
+            //list.InsertAttheBeginnning(5);
+            //list.InsertAtTheEnd(20);
+            //list.InsertAtSpecificPosition(15, 2);
 
-            Console.WriteLine("Reverse:");
-            list.printBackward();  // 20 15 10 5
+            //Console.WriteLine("Forward:");
+            //list.printForward();  // 5 10 15 20
 
-            list.deleteByVlaue(10);
-            list.deleteAtBeginning();
-            list.deleteAtLast();
+            //Console.WriteLine("Reverse:");
+            //list.printBackward();  // 20 15 10 5
 
-            Console.WriteLine("After deletions:");
-            list.printForward();  // 15
-        }
+            //list.deleteByVlaue(10);
+            //list.deleteAtBeginning();
+            //list.deleteAtLast();
+
+            //Console.WriteLine("After deletions:");
+            //list.printForward();  // 15
+
+
+
+
+            CircularSinglyLinkedList cll = new CircularSinglyLinkedList();
+
+            cll.insertAtEnd(10);
+            cll.insertAtEnd(20);
+            cll.insertAtEnd(30);
+            cll.insertAtBeginning(5);
+            cll.Display(); // Output: 5 10 20 30
+
+            Console.WriteLine("Count: " + cll.Count()); // Output: 4
+
+            cll.InsertAfter(20, 25);
+            cll.Display(); // Output: 5 10 20 25 30
+
+            cll.delete(10);
+            cll.Display(); // Output: 5 20 25 30
+
+            Console.WriteLine("Search 25: " + cll.Search(25)); // Output: True
+            Console.WriteLine("Search 100: " + cll.Search(100)); // Output: False
+
+            cll.Clear();
+            cll.Display(); // Output: List is empty.
+        }   
+
     }
+     
 }
