@@ -61,27 +61,87 @@
 
 
 
-            CircularSinglyLinkedList cll = new CircularSinglyLinkedList();
+            //var list = new CircularSinglyLinkedList();
 
-            cll.insertAtEnd(10);
-            cll.insertAtEnd(20);
-            cll.insertAtEnd(30);
-            cll.insertAtBeginning(5);
-            cll.Display(); // Output: 5 10 20 30
+            //list.InsertAtEnd(10);
+            //list.insertAtBeginning(5);
+            //list.InsertAtEnd(20);
+            //list.InsertAfter(10, 15);
 
-            Console.WriteLine("Count: " + cll.Count()); // Output: 4
+            //Console.WriteLine("List:");
+            //list.Display(); // 5 10 15 20
 
-            cll.InsertAfter(20, 25);
-            cll.Display(); // Output: 5 10 20 25 30
+            //list.delete(10);
+            //Console.WriteLine("After Deleting 10:");
+            //list.Display(); // 5 15 20
 
-            cll.delete(10);
-            cll.Display(); // Output: 5 20 25 30
+            //Console.WriteLine("Count: " + list.Count()); // 3
 
-            Console.WriteLine("Search 25: " + cll.Search(25)); // Output: True
-            Console.WriteLine("Search 100: " + cll.Search(100)); // Output: False
+            //list.Update(15, 17);
+            //list.Display(); // 5 17 20
 
-            cll.Clear();
-            cll.Display(); // Output: List is empty.
+            //Console.WriteLine("Search 20: " + list.Search(20)); // true
+
+            //list.Reverse();
+            //Console.WriteLine("Reversed:");
+            //list.Display(); // 20 17 5
+
+            //var (l1, l2) = list.Split();
+            //Console.WriteLine("Split:");
+            //l1.Display();
+            //l2.Display();
+
+            //var list2 = new CircularSinglyLinkedList();
+            //list2.InsertAtEnd(30);
+            //list2.InsertAtEnd(40);
+
+            //l1.Concatenate(list2);
+            //Console.WriteLine("After Concatenation:");
+            //l1.Display();
+
+            //l1.convertToLinear();
+            //Console.WriteLine("Converted to Linear:");
+            //l1.Display(); // last node won't link to head
+
+            var list = new CircularDoublyLinkedList();
+
+            list.InsertAtEnd(10);
+            list.InsertAtBeginning(5);
+            list.InsertAtEnd(15);
+            list.InsertAfter(10, 12);
+
+            Console.WriteLine("Forward:");
+            list.DisplayForward(); // 5 10 12 15
+
+            Console.WriteLine("Backward:");
+            list.DisplayBackward(); // 15 12 10 5
+
+            list.Delete(10);
+            list.DisplayForward(); // 5 12 15
+
+            Console.WriteLine("Count: " + list.Count());
+
+            list.Update(12, 13);
+            list.DisplayForward(); // 5 13 15
+
+            list.Reverse();
+            Console.WriteLine("Reversed:");
+            list.DisplayForward(); // 15 13 5
+
+            var (l1, l2) = list.Split();
+            Console.WriteLine("Split:");
+            l1.DisplayForward();
+            l2.DisplayForward();
+
+            var list2 = new CircularDoublyLinkedList();
+            list2.InsertAtEnd(99);
+            list2.InsertAtEnd(100);
+            l1.Concatenate(list2);
+            Console.WriteLine("Concatenated:");
+            l1.DisplayForward();
+
+            l1.ConverToLinear();
+
         }   
 
     }
