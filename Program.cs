@@ -4,40 +4,33 @@
     {
         static void Main(string[] args)
         {
-            Node head = new Node(1);
-            head.next = new Node(2);
-            head.next.next = new Node(3);
-            head.next.next.next = new Node(4);
-            head.next.next.next.next = new Node(5);
-            head.next.next.next.next.next = new Node(6);
-            head.next.next.next.next.next.next = new Node(6);
-            head.next.next.next.next.next.next.next = new Node(6);
+            //Node head = new Node(1);
+            //head.next = new Node(2);
+            //head.next.next = new Node(3);
+            //head.next.next.next = new Node(4);
+            //head.next.next.next.next = new Node(5);
+            //head.next.next.next.next.next = new Node(6);
+            //head.next.next.next.next.next.next = new Node(6);
+            //head.next.next.next.next.next.next.next = new Node(6);
+
+            SinglyLinkedList list = new SinglyLinkedList();
+            list.InsertAtHead(10);
+            list.InsertAtTail(20);
+            list.InsertAtTail(30);
+            list.InsertAtPosition(25, 2);
+
+            list.Tranverse(); // 10 -> 20 -> 25 -> 30 -> null
+
+            list.DeleteByValue(25);
+            list.Tranverse(); // 10 -> 20 -> 30 -> null
+
+            Console.WriteLine("Middle: " + list.GetMiddle()); // 20
+
+            list.Reverse();
+            list.Tranverse(); // 30 -> 20 -> 10 -> null
 
 
-            // for question 1 delete Kth index
-            //int k = 1;
-            //DeleteKthNode qes1 = new DeleteKthNode();
-            //qes1.DeleteNodeBasedOnInput(head,k);
-            //qes1.PrintList(head);
-
-
-            ////for question 2 find the Middle of Node 
-            //FindMiddleNode ques2 = new FindMiddleNode();
-            //int middleTortiseAAndHare = ques2.FindMiddleNodeTortiseAndHare(head);
-            //Console.WriteLine(middleTortiseAAndHare);
-            //int middleBruteForce = ques2.FindMiddleNodeBruteForce(head);
-            //Console.WriteLine(middleBruteForce); 
-
-            // For Question 3 : Finding the occurences 
-            //int key = 6; 
-            //CountOccurences ques3 = new CountOccurences();
-            //int occurenceRecursive = ques3.CountOccurenecesRecursive(head, key);
-            //int occurenceTransverse = ques3.CountOccurenceTraversing(head, key);
-            //Console.WriteLine("occurenceRecursive : " + occurenceRecursive); 
-            //Console.WriteLine("occurenceTransverse : " + occurenceTransverse); 
-
-
-
+            //// *** -------  DoublyLinkedList Start  -------- *** 
             //DoublyLinkedList list = new DoublyLinkedList();
 
             //list.InsertAtTheEnd(10);
@@ -57,10 +50,10 @@
 
             //Console.WriteLine("After deletions:");
             //list.printForward();  // 15
+            //// *** -------   DoublyLinkedList END  -------- *** 
 
 
-
-
+            //// *** -------  Circular Singly LinkedList Start  -------- *** 
             //var list = new CircularSinglyLinkedList();
 
             //list.InsertAtEnd(10);
@@ -102,47 +95,78 @@
             //l1.convertToLinear();
             //Console.WriteLine("Converted to Linear:");
             //l1.Display(); // last node won't link to head
+            //// *** -------  Circular Singly LinkedList END  -------- *** 
 
-            var list = new CircularDoublyLinkedList();
 
-            list.InsertAtEnd(10);
-            list.InsertAtBeginning(5);
-            list.InsertAtEnd(15);
-            list.InsertAfter(10, 12);
+            //// *** -------  Circular DoublyLinkedList Start  -------- *** 
+            //var list = new CircularDoublyLinkedList();
 
-            Console.WriteLine("Forward:");
-            list.DisplayForward(); // 5 10 12 15
+            //list.InsertAtEnd(10);
+            //list.InsertAtBeginning(5);
+            //list.InsertAtEnd(15);
+            //list.InsertAfter(10, 12);
 
-            Console.WriteLine("Backward:");
-            list.DisplayBackward(); // 15 12 10 5
+            //Console.WriteLine("Forward:");
+            //list.DisplayForward(); // 5 10 12 15
 
-            list.Delete(10);
-            list.DisplayForward(); // 5 12 15
+            //Console.WriteLine("Backward:");
+            //list.DisplayBackward(); // 15 12 10 5
 
-            Console.WriteLine("Count: " + list.Count());
+            //list.Delete(10);
+            //list.DisplayForward(); // 5 12 15
 
-            list.Update(12, 13);
-            list.DisplayForward(); // 5 13 15
+            //Console.WriteLine("Count: " + list.Count());
 
-            list.Reverse();
-            Console.WriteLine("Reversed:");
-            list.DisplayForward(); // 15 13 5
+            //list.Update(12, 13);
+            //list.DisplayForward(); // 5 13 15
 
-            var (l1, l2) = list.Split();
-            Console.WriteLine("Split:");
-            l1.DisplayForward();
-            l2.DisplayForward();
+            //list.Reverse();
+            //Console.WriteLine("Reversed:");
+            //list.DisplayForward(); // 15 13 5
 
-            var list2 = new CircularDoublyLinkedList();
-            list2.InsertAtEnd(99);
-            list2.InsertAtEnd(100);
-            l1.Concatenate(list2);
-            Console.WriteLine("Concatenated:");
-            l1.DisplayForward();
+            //var (l1, l2) = list.Split();
+            //Console.WriteLine("Split:");
+            //l1.DisplayForward();
+            //l2.DisplayForward();
 
-            l1.ConverToLinear();
+            //var list2 = new CircularDoublyLinkedList();
+            //list2.InsertAtEnd(99);
+            //list2.InsertAtEnd(100);
+            //l1.Concatenate(list2);
+            //Console.WriteLine("Concatenated:");
+            //l1.DisplayForward();
 
-        }   
+            //l1.ConverToLinear();
+
+            //// *** -------  Circular DoublyLinkedList END -------- *** 
+
+
+            ///***** ------------- PROBLEMS and SOLVING START ---------- **** 
+            // for question 1 delete Kth index
+            //int k = 1;
+            //DeleteKthNode qes1 = new DeleteKthNode();
+            //qes1.DeleteNodeBasedOnInput(head,k);
+            //qes1.PrintList(head);
+
+
+            ////for question 2 find the Middle of Node 
+            //FindMiddleNode ques2 = new FindMiddleNode();
+            //int middleTortiseAAndHare = ques2.FindMiddleNodeTortiseAndHare(head);
+            //Console.WriteLine(middleTortiseAAndHare);
+            //int middleBruteForce = ques2.FindMiddleNodeBruteForce(head);
+            //Console.WriteLine(middleBruteForce); 
+
+            // For Question 3 : Finding the occurences 
+            //int key = 6; 
+            //CountOccurences ques3 = new CountOccurences();
+            //int occurenceRecursive = ques3.CountOccurenecesRecursive(head, key);
+            //int occurenceTransverse = ques3.CountOccurenceTraversing(head, key);
+            //Console.WriteLine("occurenceRecursive : " + occurenceRecursive); 
+            //Console.WriteLine("occurenceTransverse : " + occurenceTransverse); 
+
+
+            ///***** ------------- PROBLEMS and SOLVING END  ---------- **** 
+        }
 
     }
      

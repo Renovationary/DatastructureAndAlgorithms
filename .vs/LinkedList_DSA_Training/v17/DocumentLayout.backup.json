@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\circulardoublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:circulardoublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\doublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:doublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,6 +61,22 @@
               "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CircularDoublyLinkedList.cs",
+              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CircularDoublyLinkedList.cs",
+              "RelativeDocumentMoniker": "CircularDoublyLinkedList.cs",
+              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CircularDoublyLinkedList.cs",
+              "RelativeToolTip": "CircularDoublyLinkedList.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAIwDMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T03:45:43.794Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CircularSinglyLinkedList.cs",
@@ -64,31 +84,26 @@
               "RelativeDocumentMoniker": "CircularSinglyLinkedList.cs",
               "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CircularSinglyLinkedList.cs",
               "RelativeToolTip": "CircularSinglyLinkedList.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAwwLYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAjwDgBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T04:11:41.141Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DoublyLinkedList.cs",
               "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\DoublyLinkedList.cs",
               "RelativeDocumentMoniker": "DoublyLinkedList.cs",
               "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\DoublyLinkedList.cs",
               "RelativeToolTip": "DoublyLinkedList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAswI0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T08:18:54.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T08:18:54.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CountOccurences.cs",
               "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CountOccurences.cs",
               "RelativeDocumentMoniker": "CountOccurences.cs",
@@ -100,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Node.cs",
               "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\Node.cs",
               "RelativeDocumentMoniker": "Node.cs",
@@ -118,14 +133,13 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwEwAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAmwIgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T06:38:01.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T06:38:01.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FindMiddleNode.cs",
               "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\FindMiddleNode.cs",
               "RelativeDocumentMoniker": "FindMiddleNode.cs",
@@ -137,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DeleteKthNode.cs",
               "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\DeleteKthNode.cs",
               "RelativeDocumentMoniker": "DeleteKthNode.cs",
