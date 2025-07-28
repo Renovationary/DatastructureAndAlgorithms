@@ -97,3 +97,6 @@ Migrations/
 
 # Optional: ignore global.json if using multiple SDKs
 # global.json
+/.vs/LinkedList_DSA_Training/v17/.suo
+/.vs/LinkedList_DSA_Training/v17/DocumentLayout.backup.json
+/.vs/LinkedList_DSA_Training/v17/DocumentLayout.json
