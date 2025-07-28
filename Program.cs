@@ -1,4 +1,6 @@
-﻿namespace LinkedList_DSA_Training
+﻿using LinkedList_DSA_Training.DSA_Arrays;
+
+namespace LinkedList_DSA_Training
 {
     public class Program
     {
@@ -13,21 +15,21 @@
             //head.next.next.next.next.next.next = new Node(6);
             //head.next.next.next.next.next.next.next = new Node(6);
 
-            SinglyLinkedList list = new SinglyLinkedList();
-            list.InsertAtHead(10);
-            list.InsertAtTail(20);
-            list.InsertAtTail(30);
-            list.InsertAtPosition(25, 2);
+            //SinglyLinkedList list = new SinglyLinkedList();
+            //list.InsertAtHead(10);
+            //list.InsertAtTail(20);
+            //list.InsertAtTail(30);
+            //list.InsertAtPosition(25, 2);
 
-            list.Tranverse(); // 10 -> 20 -> 25 -> 30 -> null
+            //list.Tranverse(); // 10 -> 20 -> 25 -> 30 -> null
 
-            list.DeleteByValue(25);
-            list.Tranverse(); // 10 -> 20 -> 30 -> null
+            //list.DeleteByValue(25);
+            //list.Tranverse(); // 10 -> 20 -> 30 -> null
 
-            Console.WriteLine("Middle: " + list.GetMiddle()); // 20
+            //Console.WriteLine("Middle: " + list.GetMiddle()); // 20
 
-            list.Reverse();
-            list.Tranverse(); // 30 -> 20 -> 10 -> null
+            //list.Reverse();
+            //list.Tranverse(); // 30 -> 20 -> 10 -> null
 
 
             //// *** -------  DoublyLinkedList Start  -------- *** 
@@ -166,8 +168,51 @@
 
 
             ///***** ------------- PROBLEMS and SOLVING END  ---------- **** 
+            ///
+
+
+
+            //Array Starting ..................
+
+            Console.WriteLine("Array Starting ..........");
+
+            //Question 1: 
+            int[] ques1InputBruteForceInput = [-4, -1, 0, 3, 10];
+            int[] ques1InputBruteForce = SortedArray.sortedArrayBrutedForce(ques1InputBruteForceInput);
+            Console.WriteLine("Question 1 Brute force starting...");
+
+            foreach (int i in ques1InputBruteForce)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Question 1 Brute force end ");
+
+
+            int[] ques1InputTwoPointersInput = [-4, -1, 0, 3, 10];
+            int[] ques1InputTwoPointers = SortedArray.sortedUsingTwoPointers(ques1InputTwoPointersInput);
+            Console.WriteLine("Question 1 Two Pointers starting...");
+
+            foreach (int i in ques1InputTwoPointers)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Question 1 Two Pointer end ");
+
+
+            Console.WriteLine("Question 2 Monotonic starting...");
+            int[] ques2Input = [1, 2, 2, 3];
+            bool quest2Results =  Monotonic.IsMonotonic(ques2Input);
+            Console.WriteLine("isMonotonic : " +quest2Results);
+            Console.WriteLine("Question 2 Monotonic End...");
+
+
+            Console.WriteLine();
+            Console.WriteLine("Array End ..........");
+            //Array End ............................
         }
 
     }
-     
+
 }

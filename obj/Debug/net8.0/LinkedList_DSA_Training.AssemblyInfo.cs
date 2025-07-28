@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinkedList_DSA_Training")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65c4875f35e1c5c8c8e3af0b1c1c8c399f531439")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2ecd288450aaf6d4e8fce82b3951f7f09af3259")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinkedList_DSA_Training")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinkedList_DSA_Training")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
