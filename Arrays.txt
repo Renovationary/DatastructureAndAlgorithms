@@ -17,3 +17,35 @@ input -> [-4,-2,0,1,3]
 output-> [0,1,4,9,16]
 
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+Question : 2 
+An array is monotonic if it is either monotone increasing or monotone decreasing. An array is 
+monotone increasing if all it's elements from left to right are non-decreasing. An array is 
+monotone decreasing if all it's elements from left to right are non-increasing. Given an array return true if the given array is monotonic , or false otherwise. 
+
+[1,2,3,3] - monotone increasing
+[3,2,1]   - monotone decreasing
+[3,3,3]   - 
+
+
+---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+Question : 3 
+Given an array , rotate an array to the right by K steps , where K is non-negative. 
+LeetCode : https://leetcode.com/problems/rotate-array/description/
+
+---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+Question : 4 
+You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+Return the maximum amount of water a container can store. Notice that you may not slant the container.
+
+LeetCode : https://leetcode.com/problems/container-with-most-water/description/
+
+---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+
+
+ 
+

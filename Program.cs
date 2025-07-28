@@ -206,9 +206,35 @@ namespace LinkedList_DSA_Training
             bool quest2Results =  Monotonic.IsMonotonic(ques2Input);
             Console.WriteLine("isMonotonic : " +quest2Results);
             Console.WriteLine("Question 2 Monotonic End...");
-
-
             Console.WriteLine();
+
+
+
+
+            //Question 3: Rotate Array
+            int[] ques3rotateArray = { 1, 2, 3, 4, 5 };
+            int[] rotated = RotateArray.RotateArrayBruteForce(ques3rotateArray, 2);
+
+            Console.WriteLine("Question 3 Rotate Array Brute Force starting...");
+            Console.Write(string.Join(", ", rotated));
+            Console.WriteLine("Question 3 Rotate Array Brute Force ended...");
+
+            int[] ques3rotateArrayOptimal = { 1, 2, 3, 4, 5 };
+            int[] rotatedResult = RotateArray.RotateArrayBruteForce(ques3rotateArrayOptimal, 2);
+
+            Console.WriteLine("Question 3 Rotate Array Brute Force starting...");
+            Console.Write(string.Join(", ", rotatedResult));
+            Console.WriteLine();
+            Console.WriteLine("Question 3 Rotate Array Brute Force ended...");
+
+            int[] heights = { 3, 7, 5, 6, 8, 4 };
+
+            int resultBruteForce = ContainerWithMostWater.MaxAreaBruteForce(heights);
+            int resultOptimized =  ContainerWithMostWater.MaxArea(heights);
+
+            Console.WriteLine("Brute Force Max Area: " + resultBruteForce);
+            Console.WriteLine("Optimized Max Area: " + resultOptimized);
+
             Console.WriteLine("Array End ..........");
             //Array End ............................
         }
