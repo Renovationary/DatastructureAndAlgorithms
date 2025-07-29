@@ -104,3 +104,5 @@ Migrations/
 /.vs/ProjectEvaluation/linkedlist_dsa_training.projects.v9.bin
 /.vs/ProjectEvaluation/linkedlist_dsa_training.strings.v9.bin
 /.vs/LinkedList_DSA_Training/v17/.futdcache.v2
+/obj/Debug/net8.0/LinkedList_DSA_Training.AssemblyInfo.cs
+/obj/Debug/net8.0/LinkedList_DSA_Training.AssemblyInfoInputs.cache
