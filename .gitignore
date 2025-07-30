@@ -100,3 +100,8 @@ Migrations/
 /.vs/LinkedList_DSA_Training/v17/.suo
 /.vs/LinkedList_DSA_Training/v17/DocumentLayout.backup.json
 /.vs/LinkedList_DSA_Training/v17/DocumentLayout.json
+/obj/Debug/net8.0/LinkedList_DSA_Training.GeneratedMSBuildEditorConfig.editorconfig
+/obj/Debug/net8.0/LinkedList_DSA_Training.AssemblyInfo.cs
+/obj/Debug/net8.0/LinkedList_DSA_Training.AssemblyInfoInputs.cache
+/Program.cs
+/obj/Debug/net8.0/apphost.exe
