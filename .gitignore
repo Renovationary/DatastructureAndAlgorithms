@@ -100,3 +100,35 @@ Migrations/
 /.vs/LinkedList_DSA_Training/v17/.suo
 /.vs/LinkedList_DSA_Training/v17/DocumentLayout.backup.json
 /.vs/LinkedList_DSA_Training/v17/DocumentLayout.json
+
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore Visual Studio temporary files and build results
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*.dbmdl
+
+# Ignore NuGet package files
+project.lock.json
+project.nuget.cache
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Ignore generated files from build
+*.g.props
+*.g.targets
+*.g.cs
+*.AssemblyInfo.cs
+*.GeneratedMSBuildEditorConfig.editorconfig
+/obj/Debug/net8.0/LinkedList_DSA_Training.GeneratedMSBuildEditorConfig.editorconfig
+/obj/Debug/net8.0/LinkedList_DSA_Training.AssemblyInfo.cs
+/obj/Debug/net8.0/LinkedList_DSA_Training.AssemblyInfoInputs.cache
