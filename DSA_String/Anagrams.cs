@@ -10,29 +10,23 @@ namespace LinkedList_DSA_Training.DSA_String
     {
         public static IList<IList<string>> GroupAnagrams(string[] strs)
         {
-            Dictionary<string, List<string>> map = new Dictionary<string, List<string>>();
+            var map = new Dictionary<string, List<string>>();
 
-            foreach (string word in strs)
+            foreach (var str in strs)
             {
-                char[] chars = word.ToCharArray();
-                Array.Sort(chars);
-                string sorted = new string(chars); // e.g., "eat" → "aet"
+                // Sort the characters to create a key
+                var key = new string(str.OrderBy(c => c).ToArray());
 
-                if (!map.ContainsKey(sorted))
+                if (!map.ContainsKey(key))
                 {
-                    map[sorted] = new List<string>();
+                    map[key] = new List<string>();
                 }
 
-                map[sorted].Add(word);
+                map[key].Add(str);
             }
 
-            var result = new List<IList<string>>();
-            foreach (var group in map.Values)
-            {
-                result.Add(group);
-            }
-
-            return result;
+            return map.Values.ToList<IList<string>>();
         }
+
     }
 }
