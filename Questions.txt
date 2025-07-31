@@ -203,3 +203,26 @@ Backtrack removing 3 → []
 [3]
 
  ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ String Start
+
+ Question 1 : 
+
+ you are given a string consisting of lower case and upper case English alphabets and integer  0 to 9. Write a function that will take 
+ this string as input and return thet index of first character that is non-repeating. 
+
+ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+Question 2 : 
+
+you are given a string. write a function to check that string is palindrome or not. 
+
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+Question 3 : 
+
+given an array of strings consisting of lower case English letters , group the anagrams together. You can return the answer in any order.
+an anagram is a word or phrases form by rearranging the letters of different word or phrase , using all the original letters exactly once. 
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
