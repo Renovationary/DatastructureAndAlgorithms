@@ -1,44 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\singlylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:singlylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\circularsinglylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:circularsinglylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\circulardoublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:circulardoublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\doublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:doublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\countoccurences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:countoccurences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\findmiddlenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:findmiddlenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|c:\\westerndigitaldevelopment\\lvl_up\\dsa\\linkedlist_dsa_training\\datastructureandalgorithms\\deletekthnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8002B806-5E8E-4FC1-AF08-EB31FB25384E}|LinkedList_DSA_Training.csproj|solutionrelative:deletekthnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\DatastructureAndAlgorithms\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -46,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,116 +24,20 @@
               "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SinglyLinkedList.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\SinglyLinkedList.cs",
-              "RelativeDocumentMoniker": "SinglyLinkedList.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\SinglyLinkedList.cs",
-              "RelativeToolTip": "SinglyLinkedList.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T06:29:31.649Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Node.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\Node.cs",
-              "RelativeDocumentMoniker": "Node.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\Node.cs",
-              "RelativeToolTip": "Node.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:26:08.019Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CircularDoublyLinkedList.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CircularDoublyLinkedList.cs",
-              "RelativeDocumentMoniker": "CircularDoublyLinkedList.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CircularDoublyLinkedList.cs",
-              "RelativeToolTip": "CircularDoublyLinkedList.cs",
-              "ViewState": "AgIAAOQAAAAAAAAAAAAIwDMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:45:43.794Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CircularSinglyLinkedList.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CircularSinglyLinkedList.cs",
-              "RelativeDocumentMoniker": "CircularSinglyLinkedList.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CircularSinglyLinkedList.cs",
-              "RelativeToolTip": "CircularSinglyLinkedList.cs",
-              "ViewState": "AgIAAC0BAAAAAAAAAAAWwDgBAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T04:11:41.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T06:38:01.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DoublyLinkedList.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\DoublyLinkedList.cs",
-              "RelativeDocumentMoniker": "DoublyLinkedList.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\DoublyLinkedList.cs",
-              "RelativeToolTip": "DoublyLinkedList.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAswI0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T08:18:54.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CountOccurences.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CountOccurences.cs",
-              "RelativeDocumentMoniker": "CountOccurences.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\CountOccurences.cs",
-              "RelativeToolTip": "CountOccurences.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwCEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T07:22:11.983Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FindMiddleNode.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\FindMiddleNode.cs",
-              "RelativeDocumentMoniker": "FindMiddleNode.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\FindMiddleNode.cs",
-              "RelativeToolTip": "FindMiddleNode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:51:27.674Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DeleteKthNode.cs",
-              "DocumentMoniker": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\DeleteKthNode.cs",
-              "RelativeDocumentMoniker": "DeleteKthNode.cs",
-              "ToolTip": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\LinkedList_DSA_Training\\DatastructureAndAlgorithms\\DeleteKthNode.cs",
-              "RelativeToolTip": "DeleteKthNode.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T08:13:34.884Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
