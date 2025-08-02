@@ -1,4 +1,4 @@
-Arrays
+﻿Arrays
 
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
 Question : 1 
@@ -125,12 +125,81 @@ for the frist term N = 0 .
 LeetCode : https://leetcode.com/problems/fibonacci-number/description/
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
 Question : 2 
-Let�s define a peculiar type of array in which each element is either an integer or another peculiar array. Assume that a peculiar array is never empty.
+Let’s define a peculiar type of array in which each element is either an integer or another peculiar array. Assume that a peculiar array is never empty.
 Write a function that will take a peculiar array as its input and find the sum of its elements. 
 If an array is an element in the peculiar array you have to convert it to its equivalent value so that you can sum it with the other elements. 
 Equivalent value of an array is the sum of its elements raised to the number which represents how far nested it is. 
-For e.g. [2,3[4,1,2]] = 2+3+ (4+1+2)^2[1,2,[7,[3,4],2]] = 1 + 2 + (7 + (3+4)^3 + 2)^2
+For e.g. [2,3[4,1,2]] = 2+3+ (4+1+2)^2    [1,2,[7,[3,4],2]] = 1 + 2 + (7 + (3+4)^3 + 2)^2
 
 LeetCode : https://leetcode.com/problems/sum-of-nested-integer/description/
- ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+Question : 3 ******
+
+give an array of distinct integers, return all the possible permutations. you can return the answer in any order. 
+
+Start: []
+├─ Add 1 → [1]
+│   ├─ Add 2 → [1,2]
+│   │   └─ Add 3 → [1,2,3] (save)
+│   └─ Add 3 → [1,3]
+│       └─ Add 2 → [1,3,2] (save)
+├─ Add 2 → [2]
+│   ├─ Add 1 → [2,1]
+│   │   └─ Add 3 → [2,1,3] (save)
+│   └─ Add 3 → [2,3]
+│       └─ Add 1 → [2,3,1] (save)
+└─ Add 3 → [3]
+    ├─ Add 1 → [3,1]
+    │   └─ Add 2 → [3,1,2] (save)
+    └─ Add 2 → [3,2]
+        └─ Add 1 → [3,2,1] (save)
+
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question : 4
+
+given an integer array of unique elements, return all possible subsets(power set). the solution set must no contain duplicate subsets. return solution in any order. 
+
+How this works step-by-step for input [1, 2, 3]:
+Start with empty subset [] and add it.
+
+Add 1 → [1] and add it.
+
+Add 2 → [1,2] and add it.
+
+Add 3 → [1,2,3] and add it.
+
+Backtrack removing 3 → [1,2]
+
+Backtrack removing 2 → [1]
+
+Add 3 → [1,3] and add it.
+
+Backtrack removing 3 → [1]
+
+Backtrack removing 1 → []
+
+Add 2 → [2] and add it.
+
+Add 3 → [2,3] and add it.
+
+Backtrack removing 3 → [2]
+
+Backtrack removing 2 → []
+
+Add 3 → [3] and add it.
+
+Backtrack removing 3 → []
+
+
+[]
+[1]
+[1, 2]
+[1, 2, 3]
+[1, 3]
+[2]
+[2, 3]
+[3]
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
