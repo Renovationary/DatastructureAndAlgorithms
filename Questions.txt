@@ -226,3 +226,77 @@ given an array of strings consisting of lower case English letters , group the a
 an anagram is a word or phrases form by rearranging the letters of different word or phrase , using all the original letters exactly once. 
 
  ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Linked List 
+ Question 1 :
+ 
+ a. Design a singly linked list with the following functions:
+ 
+ 1. Insert at Beginning
+ 2. Insert at End
+ 3. Insert at Position
+ 4. Delete at Beginning
+ 5. Delete at End
+ 6. Delete by Value
+ 7. Delete at Position
+ 8. Search
+ 9. Get Length
+10. Display List
+12. Reverse List
+
+b. Desing a doubly linked list with the following functions:
+ 1. Insert at Beginning
+ 2. Insert at End
+ 3. Insert at Position
+ 4. Delete at Beginning
+ 5. Delete at End
+ 6. Delete by Value
+ 7. Delete at Position
+ 8. Search
+ 9. Get Length
+10. Display Forward
+11. Display Backward
+12. Reverse List
+
+ leetCode : https://leetcode.com/problems/design-linked-list/description/
+ leetCode : https://leetcode.com/problems/design-doubly-linked-list/description/
+ letCode : https://leetcode.com/problems/design-circular-linked-list/description/
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question 2 : 
+ 
+ You are give the head of a Sorted Singly Linked List. Write a function that will take the given head as input, delete all nodes that have vlaue that is already
+ the value of another node so that each value appears 1 time only and return the linked list, which is still to be sorted linked list. 
+
+ leetCode : https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/   
+ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+ Question 3 : 
+ You are given the head of a singly linked list. Check if there is a cycle and if 
+ yes , return the node where the cycle begins. If there is no cycle, return null.
+ there is a cycle in a linked list if there is a node in the list that can be reached again by continuously following the next pointer.
+ do not modify the linked list.
+
+ LeetCode : https://leetcode.com/problems/linked-list-cycle-ii/description/
+
+ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question 4 :
+ 
+ Given an array of Integers nums containing n+1 integers where each integer is in the range 
+ [1, n] inclusive. There is only one duplicate number in nums, return this duplicate number. 
+ You must solve the problem without modifying the array nums and using only constant extra space.
+
+ LeetCode : https://leetcode.com/problems/find-the-duplicate-number/description/
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+ Question 5 :
+
+ You are given two non-empty linked lists representing two non-negative integers.
+ The digits are stored in reverse order and each of their nodes contains a single digit.
+ Add the two numbers and return it as a linked list. You may assume the two numbers do not contain
+ any leading zero, except the number 0 itself. 0<= Node Value <= 9
+
+ leetCode : https://leetcode.com/problems/add-two-numbers/description/
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
