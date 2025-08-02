@@ -1,4 +1,4 @@
-Arrays
+﻿Arrays
 
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
 Question : 1 
@@ -111,54 +111,118 @@ Output: true
 
 LeetCode : https://leetcode.com/problems/isomorphic-strings/description/	
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
-LinkedList
 
-Question : 1	
+Recurrsion started
 
-Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
-A node in a singly linked list should have two attributes: val and next. val is the value of the current node, and next is a pointer/reference to the next node.
-If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. Assume all nodes in the linked list are 0-indexed.
+Question : 1
 
-Implement the MyLinkedList class:
+In the Fibonacci Sequence , each subsequent term is obtained by adding the preceding two terms. this is true for all the numbers except the first
+two numbers of Fibonacci series aas they do not have two preceding numbers.The first two tersm 
+in Fibonacci series are 0 and 1. F(n) = F(n-1) + F(n-2) for n > 1. 
+Write a function that finds F(n) for a given n where n is an integer greater than or equal to zero. 
+for the frist term N = 0 . 
 
-MyLinkedList() Initializes the MyLinkedList object.
-int get(int index) Get the value of the indexth node in the linked list. If the index is invalid, return -1.
-void addAtHead(int val) Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
-void addAtTail(int val) Append a node of value val as the last element of the linked list.
-void addAtIndex(int index, int val) Add a node of value val before the indexth node in the linked list. If index equals the length of the linked list, the node will be appended to the end of the linked list. If index is greater than the length, the node will not be inserted.
-void deleteAtIndex(int index) Delete the indexth node in the linked list, if the index is valid.
- 
-
-Example 1:
-
-Input
-["MyLinkedList", "addAtHead", "addAtTail", "addAtIndex", "get", "deleteAtIndex", "get"]
-[[], [1], [3], [1, 2], [1], [1], [1]]
-Output
-[null, null, null, null, 2, null, 3]
-
-Explanation
-MyLinkedList myLinkedList = new MyLinkedList();
-myLinkedList.addAtHead(1);
-myLinkedList.addAtTail(3);
-myLinkedList.addAtIndex(1, 2);    // linked list becomes 1->2->3
-myLinkedList.get(1);              // return 2
-myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
-myLinkedList.get(1);              // return 3
- 
-
-Constraints:
-
-0 <= index, val <= 1000
-Please do not use the built-in LinkedList library.
-At most 2000 calls will be made to get, addAtHead, addAtTail, addAtIndex and deleteAtIndex.
-
-https://leetcode.com/problems/design-linked-list/description/ 
-
+LeetCode : https://leetcode.com/problems/fibonacci-number/description/
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
-Question 2 
-Your are given the head of a sorted singly linked list. Write a function that will take the given head as input, delete all nodes that have a value 
-that is already the value of another node so that each appears 1 time only and retrun the linked list,which is still to be a sorted linked list. 
+Question : 2 
+Let’s define a peculiar type of array in which each element is either an integer or another peculiar array. Assume that a peculiar array is never empty.
+Write a function that will take a peculiar array as its input and find the sum of its elements. 
+If an array is an element in the peculiar array you have to convert it to its equivalent value so that you can sum it with the other elements. 
+Equivalent value of an array is the sum of its elements raised to the number which represents how far nested it is. 
+For e.g. [2,3[4,1,2]] = 2+3+ (4+1+2)^2    [1,2,[7,[3,4],2]] = 1 + 2 + (7 + (3+4)^3 + 2)^2
 
-LeetCode : https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
----------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+LeetCode : https://leetcode.com/problems/sum-of-nested-integer/description/
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+Question : 3 ******
+
+give an array of distinct integers, return all the possible permutations. you can return the answer in any order. 
+
+Start: []
+├─ Add 1 → [1]
+│   ├─ Add 2 → [1,2]
+│   │   └─ Add 3 → [1,2,3] (save)
+│   └─ Add 3 → [1,3]
+│       └─ Add 2 → [1,3,2] (save)
+├─ Add 2 → [2]
+│   ├─ Add 1 → [2,1]
+│   │   └─ Add 3 → [2,1,3] (save)
+│   └─ Add 3 → [2,3]
+│       └─ Add 1 → [2,3,1] (save)
+└─ Add 3 → [3]
+    ├─ Add 1 → [3,1]
+    │   └─ Add 2 → [3,1,2] (save)
+    └─ Add 2 → [3,2]
+        └─ Add 1 → [3,2,1] (save)
+
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question : 4
+
+given an integer array of unique elements, return all possible subsets(power set). the solution set must no contain duplicate subsets. return solution in any order. 
+
+How this works step-by-step for input [1, 2, 3]:
+Start with empty subset [] and add it.
+
+Add 1 → [1] and add it.
+
+Add 2 → [1,2] and add it.
+
+Add 3 → [1,2,3] and add it.
+
+Backtrack removing 3 → [1,2]
+
+Backtrack removing 2 → [1]
+
+Add 3 → [1,3] and add it.
+
+Backtrack removing 3 → [1]
+
+Backtrack removing 1 → []
+
+Add 2 → [2] and add it.
+
+Add 3 → [2,3] and add it.
+
+Backtrack removing 3 → [2]
+
+Backtrack removing 2 → []
+
+Add 3 → [3] and add it.
+
+Backtrack removing 3 → []
+
+
+[]
+[1]
+[1, 2]
+[1, 2, 3]
+[1, 3]
+[2]
+[2, 3]
+[3]
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ String Start
+
+ Question 1 : 
+
+ you are given a string consisting of lower case and upper case English alphabets and integer  0 to 9. Write a function that will take 
+ this string as input and return thet index of first character that is non-repeating. 
+
+ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+Question 2 : 
+
+you are given a string. write a function to check that string is palindrome or not. 
+
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+Question 3 : 
+
+given an array of strings consisting of lower case English letters , group the anagrams together. You can return the answer in any order.
+an anagram is a word or phrases form by rearranging the letters of different word or phrase , using all the original letters exactly once. 
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------

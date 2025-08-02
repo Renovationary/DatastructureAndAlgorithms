@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\level_up\\DSA_Training\\PreparationForInterview\\DatastructureAndAlgorithms\\LinkedList_DSA_Training.csproj": {}
+    "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\DatastructureAndAlgorithms\\LinkedList_DSA_Training.csproj": {}
   },
   "projects": {
-    "D:\\level_up\\DSA_Training\\PreparationForInterview\\DatastructureAndAlgorithms\\LinkedList_DSA_Training.csproj": {
+    "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\DatastructureAndAlgorithms\\LinkedList_DSA_Training.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\level_up\\DSA_Training\\PreparationForInterview\\DatastructureAndAlgorithms\\LinkedList_DSA_Training.csproj",
+        "projectUniqueName": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\DatastructureAndAlgorithms\\LinkedList_DSA_Training.csproj",
         "projectName": "LinkedList_DSA_Training",
-        "projectPath": "D:\\level_up\\DSA_Training\\PreparationForInterview\\DatastructureAndAlgorithms\\LinkedList_DSA_Training.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\level_up\\DSA_Training\\PreparationForInterview\\DatastructureAndAlgorithms\\obj\\",
+        "projectPath": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\DatastructureAndAlgorithms\\LinkedList_DSA_Training.csproj",
+        "packagesPath": "C:\\Users\\7357514\\.nuget\\packages\\",
+        "outputPath": "C:\\WesternDigitalDevelopment\\LvL_UP\\DSA\\DatastructureAndAlgorithms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\7357514\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -46,7 +47,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -67,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
