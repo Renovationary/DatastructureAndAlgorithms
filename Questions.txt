@@ -1,4 +1,4 @@
-Arrays
+﻿Arrays
 
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
 Question : 1 
@@ -111,54 +111,268 @@ Output: true
 
 LeetCode : https://leetcode.com/problems/isomorphic-strings/description/	
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
-LinkedList
 
-Question : 1	
+Recurrsion started
 
-Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
-A node in a singly linked list should have two attributes: val and next. val is the value of the current node, and next is a pointer/reference to the next node.
-If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. Assume all nodes in the linked list are 0-indexed.
+Question : 1
 
-Implement the MyLinkedList class:
+In the Fibonacci Sequence , each subsequent term is obtained by adding the preceding two terms. this is true for all the numbers except the first
+two numbers of Fibonacci series aas they do not have two preceding numbers.The first two tersm 
+in Fibonacci series are 0 and 1. F(n) = F(n-1) + F(n-2) for n > 1. 
+Write a function that finds F(n) for a given n where n is an integer greater than or equal to zero. 
+for the frist term N = 0 . 
 
-MyLinkedList() Initializes the MyLinkedList object.
-int get(int index) Get the value of the indexth node in the linked list. If the index is invalid, return -1.
-void addAtHead(int val) Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
-void addAtTail(int val) Append a node of value val as the last element of the linked list.
-void addAtIndex(int index, int val) Add a node of value val before the indexth node in the linked list. If index equals the length of the linked list, the node will be appended to the end of the linked list. If index is greater than the length, the node will not be inserted.
-void deleteAtIndex(int index) Delete the indexth node in the linked list, if the index is valid.
+LeetCode : https://leetcode.com/problems/fibonacci-number/description/
+---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+Question : 2 
+Let’s define a peculiar type of array in which each element is either an integer or another peculiar array. Assume that a peculiar array is never empty.
+Write a function that will take a peculiar array as its input and find the sum of its elements. 
+If an array is an element in the peculiar array you have to convert it to its equivalent value so that you can sum it with the other elements. 
+Equivalent value of an array is the sum of its elements raised to the number which represents how far nested it is. 
+For e.g. [2,3[4,1,2]] = 2+3+ (4+1+2)^2    [1,2,[7,[3,4],2]] = 1 + 2 + (7 + (3+4)^3 + 2)^2
+
+LeetCode : https://leetcode.com/problems/sum-of-nested-integer/description/
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+Question : 3 ******
+
+give an array of distinct integers, return all the possible permutations. you can return the answer in any order. 
+
+Start: []
+├─ Add 1 → [1]
+│   ├─ Add 2 → [1,2]
+│   │   └─ Add 3 → [1,2,3] (save)
+│   └─ Add 3 → [1,3]
+│       └─ Add 2 → [1,3,2] (save)
+├─ Add 2 → [2]
+│   ├─ Add 1 → [2,1]
+│   │   └─ Add 3 → [2,1,3] (save)
+│   └─ Add 3 → [2,3]
+│       └─ Add 1 → [2,3,1] (save)
+└─ Add 3 → [3]
+    ├─ Add 1 → [3,1]
+    │   └─ Add 2 → [3,1,2] (save)
+    └─ Add 2 → [3,2]
+        └─ Add 1 → [3,2,1] (save)
+
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question : 4
+
+given an integer array of unique elements, return all possible subsets(power set). the solution set must no contain duplicate subsets. return solution in any order. 
+
+How this works step-by-step for input [1, 2, 3]:
+Start with empty subset [] and add it.
+
+Add 1 → [1] and add it.
+
+Add 2 → [1,2] and add it.
+
+Add 3 → [1,2,3] and add it.
+
+Backtrack removing 3 → [1,2]
+
+Backtrack removing 2 → [1]
+
+Add 3 → [1,3] and add it.
+
+Backtrack removing 3 → [1]
+
+Backtrack removing 1 → []
+
+Add 2 → [2] and add it.
+
+Add 3 → [2,3] and add it.
+
+Backtrack removing 3 → [2]
+
+Backtrack removing 2 → []
+
+Add 3 → [3] and add it.
+
+Backtrack removing 3 → []
+
+
+[]
+[1]
+[1, 2]
+[1, 2, 3]
+[1, 3]
+[2]
+[2, 3]
+[3]
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ String Start
+
+ Question 1 : 
+
+ you are given a string consisting of lower case and upper case English alphabets and integer  0 to 9. Write a function that will take 
+ this string as input and return thet index of first character that is non-repeating. 
+
  
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
 
-Example 1:
+Question 2 : 
 
-Input
-["MyLinkedList", "addAtHead", "addAtTail", "addAtIndex", "get", "deleteAtIndex", "get"]
-[[], [1], [3], [1, 2], [1], [1], [1]]
-Output
-[null, null, null, null, 2, null, 3]
+you are given a string. write a function to check that string is palindrome or not. 
 
-Explanation
-MyLinkedList myLinkedList = new MyLinkedList();
-myLinkedList.addAtHead(1);
-myLinkedList.addAtTail(3);
-myLinkedList.addAtIndex(1, 2);    // linked list becomes 1->2->3
-myLinkedList.get(1);              // return 2
-myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
-myLinkedList.get(1);              // return 3
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+Question 3 : 
+
+given an array of strings consisting of lower case English letters , group the anagrams together. You can return the answer in any order.
+an anagram is a word or phrases form by rearranging the letters of different word or phrase , using all the original letters exactly once. 
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Linked List 
+ Question 1 :
  
+ a. Design a singly linked list with the following functions:
+ 
+ 1. Insert at Beginning
+ 2. Insert at End
+ 3. Insert at Position
+ 4. Delete at Beginning
+ 5. Delete at End
+ 6. Delete by Value
+ 7. Delete at Position
+ 8. Search
+ 9. Get Length
+10. Display List
+12. Reverse List
 
-Constraints:
+b. Desing a doubly linked list with the following functions:
+ 1. Insert at Beginning
+ 2. Insert at End
+ 3. Insert at Position
+ 4. Delete at Beginning
+ 5. Delete at End
+ 6. Delete by Value
+ 7. Delete at Position
+ 8. Search
+ 9. Get Length
+10. Display Forward
+11. Display Backward
+12. Reverse List
 
-0 <= index, val <= 1000
-Please do not use the built-in LinkedList library.
-At most 2000 calls will be made to get, addAtHead, addAtTail, addAtIndex and deleteAtIndex.
+ leetCode : https://leetcode.com/problems/design-linked-list/description/
+ leetCode : https://leetcode.com/problems/design-doubly-linked-list/description/
+ letCode : https://leetcode.com/problems/design-circular-linked-list/description/
 
-https://leetcode.com/problems/design-linked-list/description/ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question 2 : 
+ 
+ You are give the head of a Sorted Singly Linked List. Write a function that will take the given head as input, delete all nodes that have vlaue that is already
+ the value of another node so that each value appears 1 time only and return the linked list, which is still to be sorted linked list. 
+
+ leetCode : https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/   
+ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+ Question 3 : 
+ You are given the head of a singly linked list. Check if there is a cycle and if 
+ yes , return the node where the cycle begins. If there is no cycle, return null.
+ there is a cycle in a linked list if there is a node in the list that can be reached again by continuously following the next pointer.
+ do not modify the linked list.
+
+ LeetCode : https://leetcode.com/problems/linked-list-cycle-ii/description/
+
+ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question 4 :
+ 
+ Given an array of Integers nums containing n+1 integers where each integer is in the range 
+ [1, n] inclusive. There is only one duplicate number in nums, return this duplicate number. 
+ You must solve the problem without modifying the array nums and using only constant extra space.
+
+ LeetCode : https://leetcode.com/problems/find-the-duplicate-number/description/
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+ Question 5 :
+
+ You are given two non-empty linked lists representing two non-negative integers.
+ The digits are stored in reverse order and each of their nodes contains a single digit.
+ Add the two numbers and return it as a linked list. You may assume the two numbers do not contain
+ any leading zero, except the number 0 itself. 0<= Node Value <= 9
+
+ leetCode : https://leetcode.com/problems/add-two-numbers/description/
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question 6 : 
+ You are given the head of a linked list. Write a function that will take the head as input and return the middle node of the linked list.
+ If there are two middle nodes, return the second middle node.
+
+ leetCode : https://leetcode.com/problems/middle-of-the-linked-list/description/
+ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+
+ Question 7 :
+
+ Create a doubly linked list class. Write instance methods for this class to be 
+ able to 
+ 1. remove all the nodes in doubly linked list which have their value equal to a 
+ given value. 
+ 2. insert a node at a desired position (node and position are given). The linked list is 
+ 0 indexed. if given node is a node existing in the linked list shift it to the 
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ 
+ Stack 
+ Question 1 :
+ Design stack data structure that supports push, pop, top, and retrieving the minimum element in constant time.
+ Implement the following operations in O(1) time complexity:
+1. push(val): Pushes the element val onto the stack.
+2. pop(): Removes the element on the top of the stack.
+3. top(): Gets the top element of the stack.
+4. getMin(): Retrieves the minimum element in the stack.
+LeetCode : https://leetcode.com/problems/min-stack/description/
+
+ 
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Question 2 :
+ Evluate the value of an arithmetic expression in Reverse Polish Notation (RPN). Valid operators 
+ are +, -, *, and /. Note that division between two integers should truncate toward zero. It is  
+ guaranteed that the given RPN expression is always valid. 
+ That means the expression would always evaluate to a result and there will not be any division by zero operation.
+ the input is array of strings where each element is either a valid operator or a number.
+ E.g ["2", "1", "+", "3", "*"] = 9
+ 
+ LeetCode : https://leetcode.com/problems/evaluate-reverse-polish-notation/description/
+
+ ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
+ Queue 
+
+ Question 1 :
+ Design a queue that supports push and pop operations in O(1) time complexity.
+ Implement the following operations in O(1) time complexity:
+ 1. push(val): Pushes the element val onto the queue.
+ 2. pop(): Removes the element on the front of the queue.
+ 3. front(): Gets the front element of the queue.
+ 4. getSize(): Retrieves the size of the queue.
+
+ LeetCode : https://leetcode.com/problems/design-circular-queue/description/
 
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
-Question 2 
-Your are given the head of a sorted singly linked list. Write a function that will take the given head as input, delete all nodes that have a value 
-that is already the value of another node so that each appears 1 time only and retrun the linked list,which is still to be a sorted linked list. 
+Question 2 : 
 
-LeetCode : https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+Implement first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, pop, peek, and empty).
+implement my queue class:
+push(val): Pushes element val to the back of the queue.)
+pop(): Removes the element from the front of the queue and returns it.
+peek(): Returns the element at the front of the queue.
+empty(): Returns true if the queue is empty, false otherwise.
+
+Note  : you must use only standard stack operations on the stacks. which means only push to top
+peek/pop from top, size and is empty operations are valid. 
+
+** Depending on your language , the stack may not be supported navtively. You may simulate a stack using a 
+list or deque (double-ended queue) as long as you use only a stack standard operations. 
+
+.Follow up : Implement the queue such that each operation is amortized O(1) time complexity.
+In other words. performing n operations will take O(n) time even if one of those operations may take longer than O(1) time.
+
+LeetCode : https://leetcode.com/problems/implement-queue-using-stacks/description/
+
 ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------
