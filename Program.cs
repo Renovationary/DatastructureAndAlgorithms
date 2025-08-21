@@ -1,4 +1,5 @@
 ﻿using LinkedList_DSA_Training.DSA_Arrays;
+using LinkedList_DSA_Training.Patterns.Sliding_Window;
 
 namespace LinkedList_DSA_Training
 {
@@ -174,71 +175,101 @@ namespace LinkedList_DSA_Training
 
             //Array Starting ..................
 
-            Console.WriteLine("Array Starting ..........");
+            //Console.WriteLine("Array Starting ..........");
 
-            //Question 1: 
-            int[] ques1InputBruteForceInput = [-4, -1, 0, 3, 10];
-            int[] ques1InputBruteForce = SortedArray.sortedArrayBrutedForce(ques1InputBruteForceInput);
-            Console.WriteLine("Question 1 Brute force starting...");
+            ////Question 1: 
+            //int[] ques1InputBruteForceInput = [-4, -1, 0, 3, 10];
+            //int[] ques1InputBruteForce = SortedArray.sortedArrayBrutedForce(ques1InputBruteForceInput);
+            //Console.WriteLine("Question 1 Brute force starting...");
 
-            foreach (int i in ques1InputBruteForce)
-            {
-                Console.Write(i + " ");
-            }
-            Console.WriteLine();
-            Console.WriteLine("Question 1 Brute force end ");
-
-
-            int[] ques1InputTwoPointersInput = [-4, -1, 0, 3, 10];
-            int[] ques1InputTwoPointers = SortedArray.sortedUsingTwoPointers(ques1InputTwoPointersInput);
-            Console.WriteLine("Question 1 Two Pointers starting...");
-
-            foreach (int i in ques1InputTwoPointers)
-            {
-                Console.Write(i + " ");
-            }
-            Console.WriteLine();
-            Console.WriteLine("Question 1 Two Pointer end ");
+            //foreach (int i in ques1InputBruteForce)
+            //{
+            //    Console.Write(i + " ");
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("Question 1 Brute force end ");
 
 
-            Console.WriteLine("Question 2 Monotonic starting...");
-            int[] ques2Input = [1, 2, 2, 3];
-            bool quest2Results =  Monotonic.IsMonotonic(ques2Input);
-            Console.WriteLine("isMonotonic : " +quest2Results);
-            Console.WriteLine("Question 2 Monotonic End...");
-            Console.WriteLine();
+            //int[] ques1InputTwoPointersInput = [-4, -1, 0, 3, 10];
+            //int[] ques1InputTwoPointers = SortedArray.sortedUsingTwoPointers(ques1InputTwoPointersInput);
+            //Console.WriteLine("Question 1 Two Pointers starting...");
+
+            //foreach (int i in ques1InputTwoPointers)
+            //{
+            //    Console.Write(i + " ");
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("Question 1 Two Pointer end ");
+
+
+            //Console.WriteLine("Question 2 Monotonic starting...");
+            //int[] ques2Input = [1, 2, 2, 3];
+            //bool quest2Results =  Monotonic.IsMonotonic(ques2Input);
+            //Console.WriteLine("isMonotonic : " +quest2Results);
+            //Console.WriteLine("Question 2 Monotonic End...");
+            //Console.WriteLine();
 
 
 
 
-            //Question 3: Rotate Array
-            int[] ques3rotateArray = { 1, 2, 3, 4, 5 };
-            int[] rotated = RotateArray.RotateArrayBruteForce(ques3rotateArray, 2);
+            ////Question 3: Rotate Array
+            //int[] ques3rotateArray = { 1, 2, 3, 4, 5 };
+            //int[] rotated = RotateArray.RotateArrayBruteForce(ques3rotateArray, 2);
 
-            Console.WriteLine("Question 3 Rotate Array Brute Force starting...");
-            Console.Write(string.Join(", ", rotated));
-            Console.WriteLine("Question 3 Rotate Array Brute Force ended...");
+            //Console.WriteLine("Question 3 Rotate Array Brute Force starting...");
+            //Console.Write(string.Join(", ", rotated));
+            //Console.WriteLine("Question 3 Rotate Array Brute Force ended...");
 
-            int[] ques3rotateArrayOptimal = { 1, 2, 3, 4, 5 };
-            int[] rotatedResult = RotateArray.RotateArrayBruteForce(ques3rotateArrayOptimal, 2);
+            //int[] ques3rotateArrayOptimal = { 1, 2, 3, 4, 5 };
+            //int[] rotatedResult = RotateArray.RotateArrayBruteForce(ques3rotateArrayOptimal, 2);
 
-            Console.WriteLine("Question 3 Rotate Array Brute Force starting...");
-            Console.Write(string.Join(", ", rotatedResult));
-            Console.WriteLine();
-            Console.WriteLine("Question 3 Rotate Array Brute Force ended...");
+            //Console.WriteLine("Question 3 Rotate Array Brute Force starting...");
+            //Console.Write(string.Join(", ", rotatedResult));
+            //Console.WriteLine();
+            //Console.WriteLine("Question 3 Rotate Array Brute Force ended...");
 
-            int[] heights = { 3, 7, 5, 6, 8, 4 };
+            //int[] heights = { 3, 7, 5, 6, 8, 4 };
 
-            int resultBruteForce = ContainerWithMostWater.MaxAreaBruteForce(heights);
-            int resultOptimized =  ContainerWithMostWater.MaxArea(heights);
+            //int resultBruteForce = ContainerWithMostWater.MaxAreaBruteForce(heights);
+            //int resultOptimized =  ContainerWithMostWater.MaxArea(heights);
 
-            Console.WriteLine("Brute Force Max Area: " + resultBruteForce);
-            Console.WriteLine("Optimized Max Area: " + resultOptimized);
+            //Console.WriteLine("Brute Force Max Area: " + resultBruteForce);
+            //Console.WriteLine("Optimized Max Area: " + resultOptimized);
 
-            Console.WriteLine("Array End ..........");
-            //Array End ............................
+            //Console.WriteLine("Array End ..........");
+            ////Array End ............................
+            ///
+
+            /////// SLIDING WINDOWS TECHNIQUES 
+
+            Console.WriteLine("SLIDING WINDOW STARTED ..........................");
+
+            Console.WriteLine("SLIDING WINDOW . Max Sum of Sub Array Started "); 
+            int maxSumNavieResult = MaxSumOfSubArray.MaxSumOfSubArrayNaive(4); 
+            Console.WriteLine("Max Sum Navie Result : " + maxSumNavieResult);
+
+            int maxSumSlidingWindow = MaxSumOfSubArray.MaxSumOfSubArraySlidingWindow(4);            
+            Console.WriteLine("Max Sum Sliding Window Result : " + maxSumSlidingWindow);
+            Console.WriteLine(" "); 
+
+            Console.WriteLine("Finding Min Value SubArray Started .............");
+
+            int minValueInSubArray = SmallestSubString.SmallestSubStringNaive("012120"); 
+            Console.WriteLine("Min Value in SubArray(Naive ) " + minValueInSubArray);
+
+            int minValueInSubArraySlidingWindow = SmallestSubString.SmallestSubStringSlidingWindow("012120");
+            Console.WriteLine("Min Value in SubArray( Sliding Window ) " + minValueInSubArraySlidingWindow);
+
+            Console.WriteLine("Finding Min Value SubArray Ended   .............");
+
+            Console.WriteLine(" "); 
+            Console.WriteLine("SLIDING WINDOW ENDED   .........................."); 
+            /////// 
+
+
         }
 
     }
 
 }
+       

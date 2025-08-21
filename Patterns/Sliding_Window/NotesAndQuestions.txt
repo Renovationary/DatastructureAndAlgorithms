@@ -8,7 +8,7 @@ window can either can expandor shrink based on certain conditions, which helps i
 
 Question 1: 
 
-Given ana array of integers and a number k , find the maximum sum of a subarray of size K . 
+Given an array of integers and a number k , find the maximum sum of a subarray of size K . 
 
 Examples : 
 Input  : arr[] = {100,200,300,400} , k = 2
@@ -21,5 +21,29 @@ Explanation : We get maximum suum by adding subarray {4,2,10,23} of size 4
 Input  : arr[] = {2,3},k = 3 
 Output : Invalid 
 Explanation : There is no subarray of size 3 as size of whole array is 2 
+
+---------------------------------------------------------------- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ----------------------------------------------------
+
+Question 2 : 
+
+Given a string S of size N consisting of characters 0,1, and 2. the task is to find the length of the smallest substring of string S that contains all the three characters 0 , 1 and 2. 
+If no such substring exists , then return -1. 
+
+Input S = 01212
+Output : 3 
+Explanation : The Substring 012 is the smallest substring that contains the character 0,1 and 2 . 
+
+Input S = 12121 
+Output : -1 
+Explanation : As the character 0 is not Present in the String S, therefore no substring containing all the three character 0,1 and 2 exists. Hence Answer is -1 in this case . 
+
+
+---------------------------------------------------------------- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ----------------------------------------------------
+
+
+
+
+
+
 
 ---------------------------------------------------------------- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ----------------------------------------------------
