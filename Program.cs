@@ -254,10 +254,10 @@ namespace LinkedList_DSA_Training
 
             Console.WriteLine("Finding Min Value SubArray Started .............");
 
-            int minValueInSubArray = SmallestSubString.SmallestSubStringNaive("012120"); 
+            int minValueInSubArray = SmallestSubString.SmallestSubStringNaive("01212012"); 
             Console.WriteLine("Min Value in SubArray(Naive ) " + minValueInSubArray);
 
-            int minValueInSubArraySlidingWindow = SmallestSubString.SmallestSubStringSlidingWindow("012120");
+            int minValueInSubArraySlidingWindow = SmallestSubString.SmallestSubStringSlidingWindow("01110120221210122");
             Console.WriteLine("Min Value in SubArray( Sliding Window ) " + minValueInSubArraySlidingWindow);
 
             Console.WriteLine("Finding Min Value SubArray Ended   .............");
